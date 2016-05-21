@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="42dp"
+	    android:padding="5dp"
+	    android:background="@color/blue"
+	    android:orientation="horizontal">
+	    <EditText 
+	        android:id="@+id/yp_ser"
+	        android:background="@drawable/selector_search_input"
+	        android:layout_width="0dp"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="0dp"
+	        android:paddingLeft="5dp"
+	        android:singleLine="true"
+	        android:drawableLeft="@drawable/phone_search_drawable_left"
+	        android:hint="例如：教务处，按回车键即可查询"
+	        android:layout_weight="5"
+	        />
+	</LinearLayout>
+	<ListView 
+	    android:id="@+id/yp_res"
+	    android:layout_width="fill_parent"
+	    android:divider="@color/transparent"
+	    android:layout_height="wrap_content">
+	</ListView>
+</LinearLayout>

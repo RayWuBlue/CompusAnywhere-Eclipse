@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_inputbox"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/act_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_text_input"
+            android:layout_toLeftOf="@+id/chat_inputbox_submit" >
+
+            <ImageButton
+                android:id="@+id/chat_inputbox_emotion"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/compose_emoticonbutton_background" />
+
+            <EditText
+                android:id="@+id/chat_inputbox_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:layout_centerVertical="true"
+				android:background="@color/transparent"
+				android:layout_toLeftOf="@id/chat_inputbox_emotion"
+                android:hint="请文明发言"
+                android:paddingLeft="8dp"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/chat_inputbox_submit"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_blue_button"
+            android:text="@string/send"
+            android:textColor="@color/blue2white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_emotionbox"
+        android:layout_width="fill_parent"
+        android:layout_height="135dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include layout="@layout/part_defalut_emotion_layout" />
+    </LinearLayout>
+
+</LinearLayout>

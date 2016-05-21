@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_time_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:cacheColorHint="#00000000"
+    android:childDivider="@color/act_bg"
+    android:divider="@color/act_bg"
+    android:dividerHeight="0.5dip"
+    android:drawSelectorOnTop="false"
+    android:groupIndicator="@null"
+    android:background="@color/white"
+    android:listSelector="@drawable/selector_list_item"
+    android:scrollbarAlwaysDrawHorizontalTrack="true" />

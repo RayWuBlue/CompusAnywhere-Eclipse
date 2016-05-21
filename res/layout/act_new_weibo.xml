@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/ask_new_question_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ask_new_question_titlebarPar"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/ask_input_tip"
+        android:inputType="none"
+        android:padding="5dp" />
+
+    <GridView
+        android:id="@+id/ask_new_question_gv_img"
+        style="@style/remove_listview_default"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ask_new_question_titlebarPar"
+        android:columnWidth="80dip"
+        android:gravity="center"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    <LinearLayout
+        android:id="@+id/ask_new_question_titlebarPar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/act_bg" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/act_bg" >
+
+            <LinearLayout
+                android:id="@+id/ask_new_question_titlebar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/compose_camerabutton_background" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/compose_toolbar_picture" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/compose_emoticonbutton_background" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_post_weibo"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_gray_button"
+                android:textColor="@color/text_gray"
+                android:text="发布" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ask_emotionbox"
+            android:layout_width="fill_parent"
+            android:layout_height="135dp"  
+            android:orientation="vertical"
+            android:visibility="gone" >
+ 
+            <include layout="@layout/part_defalut_emotion_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

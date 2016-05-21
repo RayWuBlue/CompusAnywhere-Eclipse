@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- TabHost必须包含一个 TabWidget和一个FrameLayout -->
+
+    <TabHost
+        android:id="@+id/kb_tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="0dp" >
+
+            <!-- TabWidget的id属性必须为 @android:id/tabs -->
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/schedule_pagenav_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/act_bg" />
+            </LinearLayout>
+            <!-- FrameLayout的id属性必须为 @android:id/tabcontent -->
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/kb_monday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/act_bg"
+                    android:dividerHeight="1px"
+                    android:focusableInTouchMode="false"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/kb_tuesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/act_bg"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/kb_wednesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/act_bg"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/kb_thrusday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/act_bg"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/kb_friday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/act_bg"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/kb_saturday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/act_bg"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/kb_sunday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/act_bg"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" >
+                </ListView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

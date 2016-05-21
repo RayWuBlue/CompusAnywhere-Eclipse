@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+        <com.yuol.smile.widgets.AmazingListView
+            android:id="@+id/forumHomeListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/act_bg"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true" >
+
+        </com.yuol.smile.widgets.AmazingListView>
+
+</LinearLayout>

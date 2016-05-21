@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuol.smile"
+    android:versionCode="39"
+    android:versionName="2.2.5" >
+
+    <uses-sdk 
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 开机自启权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 快捷方式权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 个推SDK权限配置开始 -->
+    <uses-permission android:name="getui.permission.GetuiService" />
+    <!-- 自定义权限 -->
+    <permission
+        android:name="getui.permission.GetuiService"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="false"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.Welcome"
+            android:label="@string/app_name"
+            android:theme="@style/ContentOverlay" >
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Main"
+            android:theme="@style/ContentOverlay" >
+              
+        </activity>
+        <activity
+            android:name=".activity.ScheduleDay"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ScheduleManage"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Jwc"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Score"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ScoreData"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.LibraryData"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Library"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Cet"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.CetData"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ScheduleUpdate"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.User"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ScheduleAdd"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.NewAsk"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ImgPreview"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.NewsContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.NewsComment"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Login"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Register"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.CountDown"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.CountDownUpdate"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.UserInfo"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ScheduleWeek"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ModifyValue"
+            android:theme="@style/Theme.CustomDialog" >
+        </activity>
+        <activity
+            android:name=".activity.Setting"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.About"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Suggest"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.WeiboSquare"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Schedule"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.WeiboContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Inform"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.PhotoView"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.MultiPicSelect"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.VersionIntro"
+            android:theme="@style/DefaultOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.MarketSort"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Market"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.MarketPublish"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.MarketContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.UserMain"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.NewsActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.SmileNews"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Community"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.Forum"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ForumList"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.ForumDetail"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.EventNewsDetail"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.YangtzeNews"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.WebContent"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".JobActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".JobNewsDetailActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".NewsPaperActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".NewsPaperDetail"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".VideoNewsActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".JwcActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".JwcNewsDetail"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".JwcLoginActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".ScoreDetailActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".OptionalCourseActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".LibBookDetail"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".LibBookList"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".LibBookQuery"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".LibLoadInfo"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".LibraryActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".PhoneNumberActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".KbDetail"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".CourseSelect"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+
+        <activity
+            android:name=".KbQuery"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+
+        <service android:name=".service.UpdateService" />
+        <service android:name=".service.Init" />
+        <service android:name=".service.UpdateFriendsService" />
+
+        <activity
+            android:name=".YangtzeNews"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".YUNewsDetail"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".Notice"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".RadioActivity"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".activity.MyCollection"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name=".ActFlashPlay"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="RDJY8IIBDE7IAn5jwkzmM5" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="dwajIv8vNz56QGDD1zbzQ2" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="Utk1b8uzXL8LSw9REpOyF1" />
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.yuol.smile.PushDemoReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.RDJY8IIBDE7IAn5jwkzmM5" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.getui.demo"
+            android:process=":pushservice" />
+        <!-- android:authorities="downloads.第三方包名" -->
+
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.etVyv7RHJ28BqN3KKCtKJ6" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+
+        <!-- 个推SDK配置结束 -->
+
+    </application>
+
+</manifest>

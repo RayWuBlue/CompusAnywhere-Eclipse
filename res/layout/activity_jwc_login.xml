@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/jwc_login_id"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/img_act_login_uid"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="学号：" />
+
+        <EditText
+            android:id="@+id/jwc_login_word"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/img_act_login_pwd"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="密码："
+            android:inputType="textPassword" />
+
+
+
+        <Button
+            android:id="@+id/jwc_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/defaut_btn_height"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_green_button"
+            android:text="登陆"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/detail_loading"
+        style="@style/progress_loading"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_loading_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="加载失败，请刷新重试"
+        android:visibility="gone" />
+
+    <com.yuol.smile.widgets.XListView
+        android:id="@+id/mListView"
+        style="@style/remove_listview_default"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/notify_view"
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:layout_marginLeft="6.0dip"
+        android:layout_marginRight="6.0dip"
+        android:layout_marginTop="6.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/notify_view_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null" />
+
+        <LinearLayout
+            android:id="@+id/notify_view_cancel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <View
+                android:id="@+id/notify_view_divider"
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip" />
+
+            <TextView
+                android:id="@+id/notify_view_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/empty_notify_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- android:divider="#ffdddddd" -->
+    <!-- android:dividerHeight="0.5dp" -->
+
+</RelativeLayout>

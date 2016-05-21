@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item" >
+
+    <ImageView
+        android:id="@+id/user_item_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/user_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/user_item_img"
+        android:textColor="#313031"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/user_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/user_item_title"
+        android:background="@color/act_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:minWidth="20dp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/skin_icon_forward" />
+
+</RelativeLayout>

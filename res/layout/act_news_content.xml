@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical" >
+
+            <include layout="@layout/part_sorry_tip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/news_cover_ll"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/news_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/news_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_scroll_text"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.yuol.smile.widgets.NoScrollWebView
+                android:id="@+id/news_content_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/comment_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="最新评论"
+                    android:textColor="@color/text_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/act_bg" />
+
+                <TextView
+                    android:id="@+id/no_comment_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="登陆之后才能查看评论"
+                    android:textColor="@color/text_gray_lighter"
+                    android:textSize="20sp"/>
+                <com.yuol.smile.widgets.NoScrollListView
+                android:id="@+id/news_content_comment_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:divider="@color/act_bg"
+                android:focusableInTouchMode="false"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/comment_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="查看更多评论"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

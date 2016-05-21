@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        style="@style/edit_text"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5sp"
+            android:text="年份："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/kb_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/edit_text"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5sp"
+            android:text="学期："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/kb_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/edit_text"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5sp"
+            android:text="类型："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/kb_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/edit_text"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5sp"
+            android:text="院系："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/kb_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/edit_text"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5sp"
+            android:text="班级："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/kb_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kb_query_sumbit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/defaut_btn_height"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/selector_green_button"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</LinearLayout>

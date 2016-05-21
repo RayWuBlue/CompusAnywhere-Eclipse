@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:gravity="center"
+    android:paddingRight="20dp" >
+
+    <RelativeLayout
+        android:layout_width="250.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/MyAlertDialogTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ff798089"
+            android:textSize="20.0dip" />
+
+        <ImageView
+            android:id="@+id/MyAlertDialogDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignBottom="@+id/MyAlertDialogTitle"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc2c8cd"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/MyAlertDialogMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MyAlertDialogDivider"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="14.0dip"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/MyAlertDialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MyAlertDialogMessage"
+            android:layout_marginTop="14.0dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MyAlertDialog_content"
+            android:layout_marginTop="26dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/MyAlertDialogLeftBtn"
+                android:layout_width="0dip"
+                android:layout_height="46.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common_button"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/MyAlertDialogRightBtn"
+                android:layout_width="0dip"
+                android:layout_height="46.0dip"
+                android:layout_weight="1"
+                android:layout_marginLeft="-1px"
+                android:background="@drawable/selector_common_button"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

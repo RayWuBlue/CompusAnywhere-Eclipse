@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg">
+
+    
+    <GridView
+        android:id="@+id/wg_top_pop_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:columnWidth="80dip"
+        android:gravity="center"
+        style="@style/remove_listview_default"
+		android:scrollbars="none"/>
+
+    
+</RelativeLayout>
+

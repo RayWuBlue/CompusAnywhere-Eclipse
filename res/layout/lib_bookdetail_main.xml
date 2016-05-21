@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/item_lib_detail"
+            android:background="@color/act_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="题名："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/item_lib_detail" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="作者："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_lib_detail"
+            android:background="@color/act_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="出版社："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/item_lib_detail" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="标准号："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_lib_detail"
+            android:background="@color/act_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="页码："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_pageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/item_lib_detail" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="价格："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_lib_detail"
+            android:background="@color/act_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="主题："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/item_lib_detail" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="索取号："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_askNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_lib_detail"
+            android:background="@color/act_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="分类："
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/book_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@color/blue"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="馆藏信息"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="条码号"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="馆藏地点"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="流通类型"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="状态"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="应还日期"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="卷册说明"
+                android:textColor="@color/text_gray_lighter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/blue" />
+
+        <com.yuol.smile.widgets.NoScrollListView
+            android:id="@+id/book_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null" >
+        </com.yuol.smile.widgets.NoScrollListView>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >   
+  <TextView 
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/collect_loading"
+      android:gravity="center"
+      android:visibility="visible"
+      android:textSize="18sp"
+      android:text="加载中..."/>
+  <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mycollection_lv"
+        android:divider="@color/act_bg"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@drawable/selector_list_item"
+        android:background="@color/white"/>
+</LinearLayout>

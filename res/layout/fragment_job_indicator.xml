@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/indicator1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/indicator_job_notify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="资讯通知"
+            android:textColor="@color/text_gray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/indicator_job_context"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="宣讲招聘"
+            android:textColor="@color/text_gray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/indicator_job_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="招聘信息"
+            android:textColor="@color/text_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue" >
+                <LinearLayout
+                    android:id="@+id/user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp" >
+
+                    <com.yuol.smile.widgets.RoundedImageView
+                        android:id="@+id/myzone_user_img"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/default_head"
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/myzone_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:text="请先登录"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/myzone_user_mood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="#55ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 菜单项 -->
+<!-- 单独的工具 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_cell_space"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_info_me"
+                    style="@style/item_user_menu" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/info_me" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个人信息"
+                            android:textColor="@color/text_gray" />
+                    </LinearLayout>
+
+                    <View style="@style/item_user_menu_right_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+<!-- 教务处工具 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_collect"
+                    style="@style/item_user_menu" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" 
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/colllectbtn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的收藏"
+                            android:textColor="@color/text_gray" />
+                    </LinearLayout>
+
+                    <View style="@style/item_user_menu_right_arrow" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/btn_check_update"
+                    style="@style/item_user_menu" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/update" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="检查更新"
+                            android:textColor="@color/text_gray" />
+                    </LinearLayout>
+
+                    <View style="@style/item_user_menu_right_arrow" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/btn_feedback"
+                    style="@style/item_user_menu" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/feedback" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="反馈建议"
+                            android:textColor="@color/text_gray" />
+                    </LinearLayout>
+
+                    <View style="@style/item_user_menu_right_arrow" />
+                </RelativeLayout>
+				<RelativeLayout
+                    android:id="@+id/btn_about"
+                    style="@style/item_user_menu" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/about" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关于软件"
+                            android:textColor="@color/text_gray" />
+                    </LinearLayout>
+
+                    <View style="@style/item_user_menu_right_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+<!-- 生活工具 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+<RelativeLayout
+                    android:id="@+id/btn_intro"
+                    style="@style/item_user_menu" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/apk" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分享软件"
+                            android:textColor="@color/text_gray" />
+                    </LinearLayout>
+
+                    <View style="@style/item_user_menu_right_arrow" />
+                </RelativeLayout>
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

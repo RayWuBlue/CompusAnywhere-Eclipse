@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mypopmenu_layout"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_with_frame"
+    android:padding="1px"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/mypopmenu_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:divider="@color/act_bg"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

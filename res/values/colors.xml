@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#ffffff</color>
+    <color name="bg_gray">#525252</color>
+    <color name="job">#33b0ea</color>
+    <color name="newspaper">#33b0ea</color>
+    <color name="jwc">#33b0ea</color>
+    <color name="yunews">#33b0ea</color>
+    <color name="red">#ff7979</color>
+    <color name="act_bg">#ededed</color>
+    <color name="gray">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="green_lighter">#3aff92</color>
+    
+    <color name="blue">#33b0ea</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent50">#55000000</color>
+    
+    <color name="default_bg">#EEEDE6</color>
+    
+    <color name="title_bar_bg">#FDF9FA</color>
+    
+    <color name="dedede">#DEDEDE</color>
+    
+    <color name="index_item_press">#F4F4F3</color>
+    <color name="countdown_bg_hover">#EEEEEE</color>
+    
+    
+    <color name="weibo_bg">#F0F0F0</color>
+    <color name="weibo_textcolor">#707070</color>
+    
+     <color name="none_color">#00000000</color>
+    <color name="bule_overlay">#660D92DD</color>
+    
+    <color name="green">#008000</color><!--绿色 -->
+    
+    <color name="title_bar">#38c0ff</color>
+    <color name="title_bar_blue">#38c0ff</color>
+    <color name="text_gray">#2e2e2e</color>
+    <color name="text_gray_lighter">#666666</color>
+    <color name="user_show_bg">#fd3757</color>
+     <color name="home_bg">#d3d3d3</color>
+</resources>

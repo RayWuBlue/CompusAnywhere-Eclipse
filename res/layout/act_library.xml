@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <EditText
+        android:id="@+id/library_edit_id"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/defaut_input_height"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/radius_listview_default"
+        android:hint="@string/library_login_id"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/library_edit_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/defaut_input_height"
+        android:layout_below="@+id/library_edit_id"
+        android:background="@drawable/radius_listview_default"
+        android:hint="@string/library_login_pwd"
+        android:inputType="text|textPassword"
+        android:paddingLeft="20dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/library_login_tip"
+        style="@style/font_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/library_edit_pwd"
+        android:layout_marginTop="5dp"
+        android:text="@string/library_tip"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/library_login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/defaut_btn_height"
+        android:layout_below="@+id/library_login_tip"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_green_button"
+        android:text="@string/login_library"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <include layout="@layout/part_bottom_btn" />
+
+</RelativeLayout>

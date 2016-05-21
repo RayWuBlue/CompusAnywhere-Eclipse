@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector_list_item"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/kb_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/kb_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_gray_lighter"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kb_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/kb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/kb_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/teacher_small"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_gray_lighter"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/kb_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/classroom_small"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_gray_lighter"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/kb_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/time_small"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_gray_lighter"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

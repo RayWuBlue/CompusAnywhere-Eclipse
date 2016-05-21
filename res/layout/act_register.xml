@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <!-- 注册第1步 ,账号和密码 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/register_step1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="fill_parent"
+                style="@style/edit_text"
+                android:hint="用户名（请牢记）："
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/register_nickname"
+                android:layout_width="fill_parent"
+                style="@style/edit_text"
+                android:hint="昵名："
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="fill_parent"
+                style="@style/edit_text"
+                android:hint="邮箱："
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/register_pwd"
+                android:layout_width="match_parent"
+                style="@style/edit_text"
+                android:hint="密码："
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/register_pwd2"
+                android:layout_width="fill_parent"
+                style="@style/edit_text"
+                android:hint="再次输入密码："
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/register_btn_reg1"
+                style="@style/register_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/defaut_btn_height"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/blue2white"
+                android:text="@string/next_step" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
